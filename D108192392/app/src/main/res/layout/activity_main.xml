@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv1"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/tv1"
+        android:background="@drawable/state"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        app:srcCompat="@drawable/android_1" />
+
+    <ImageView
+        android:id="@+id/im2"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/im1"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/android_2" />
+
+    <ImageView
+        android:id="@+id/im3"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/im2"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/android_3" />
+
+    <ImageButton
+        android:id="@+id/imb1"
+        android:layout_width="60dp"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@id/b1"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/android_1" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@id/imb1"
+        android:text="" />
+
+    <ToggleButton
+        android:id="@+id/tg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ed1"
+        android:textOn="先生"
+        android:textOff="小姐"
+        android:checked="true"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/im_res"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/im1"
+        app:srcCompat="@drawable/android_1" />
+
+
+</RelativeLayout>

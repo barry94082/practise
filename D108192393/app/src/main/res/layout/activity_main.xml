@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/tv1"
+        />
+
+    <CheckBox
+        android:id="@+id/chh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:text="漢堡" />
+
+    <CheckBox
+        android:id="@+id/chc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_toRightOf="@id/imh"
+        android:text="可樂" />
+
+    <CheckBox
+        android:id="@+id/chf"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/chh"
+
+        android:layout_height="wrap_content"
+        android:text="薯條" />
+
+    <CheckBox
+        android:id="@+id/chu"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/chc"
+        android:layout_toRightOf="@id/imf"
+        android:layout_height="wrap_content"
+        android:text="玉米湯" />
+
+    <ImageView
+        android:id="@+id/imh"
+        android:scaleType="fitXY"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tv1"
+        android:layout_toRightOf="@id/chh"
+        app:srcCompat="@drawable/hamburger" />
+
+    <ImageView
+        android:id="@+id/imc"
+        android:layout_below="@+id/tv1"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@id/chc"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        app:srcCompat="@drawable/softdrink" />
+
+    <ImageView
+        android:id="@+id/imf"
+        android:scaleType="fitXY"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/imh"
+        android:layout_toRightOf="@id/chf"
+        app:srcCompat="@drawable/frenchfry" />
+
+    <ImageView
+        android:id="@+id/imu"
+        android:layout_width="50sp"
+        android:layout_below="@id/imc"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@id/chu"
+        android:layout_height="50sp"
+        app:srcCompat="@drawable/soup" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg"
+        android:text="訂購" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg"
+        android:layout_toRightOf="@id/button"
+        android:text="取消選擇" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/button2"
+        android:layout_below="@id/rg"
+        android:layout_height="wrap_content"
+        android:text="結束" />
+    <ImageView
+        android:id="@+id/imhh"
+        android:scaleType="fitXY"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tv2"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/hamburger" />
+
+    <ImageView
+        android:id="@+id/imcc"
+        android:layout_below="@+id/tv2"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@id/imhh"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/softdrink" />
+
+    <ImageView
+        android:id="@+id/imff"
+        android:scaleType="fitXY"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tv2"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/imcc"
+        app:srcCompat="@drawable/frenchfry" />
+
+    <ImageView
+        android:id="@+id/imuu"
+        android:layout_width="50sp"
+        android:layout_below="@id/tv2"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@id/imff"
+        android:visibility="invisible"
+        android:layout_height="50sp"
+        app:srcCompat="@drawable/soup" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:text="TextView" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imf"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小" />
+    </RadioGroup>
+
+</RelativeLayout>

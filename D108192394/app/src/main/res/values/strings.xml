@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="order">餐點選購: </string>
+    <string name="noorder">請點餐!!! </string>
+    <string name="big">大 </string>
+    <string name="mid">中 </string>
+    <string name="sml">小 </string>
+</resources>

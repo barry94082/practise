@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order"
+        android:id="@+id/tv1"
+         />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:text="可樂" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_toRightOf="@id/cb1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbc1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/big" />
+
+        <RadioButton
+            android:id="@+id/rbc2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/mid" />
+
+        <RadioButton
+            android:id="@+id/rbc3"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/sml" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb1"
+        android:text="熱狗" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb1"
+        android:layout_toRightOf="@id/cb2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbh1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/big" />
+
+        <RadioButton
+            android:id="@+id/rbh2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/mid" />
+
+        <RadioButton
+            android:id="@+id/rbh3"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/sml" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/cb2"
+
+        android:layout_height="wrap_content"
+        android:text="薯條" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb2"
+        android:layout_toRightOf="@id/cb3"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbs1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/big" />
+
+        <RadioButton
+            android:id="@+id/rbs2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/mid" />
+
+        <RadioButton
+            android:id="@+id/rbs3"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/sml" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/cb3"
+        android:layout_height="wrap_content"
+        android:text="漢堡" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb3"
+        android:layout_toRightOf="@id/cb3"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbb1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/big" />
+
+        <RadioButton
+            android:id="@+id/rbb2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/mid" />
+
+        <RadioButton
+            android:id="@+id/rbb3"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/sml" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/cb4"
+        android:layout_height="wrap_content"
+        android:text="選取" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/cb4"
+        android:layout_toRightOf="@id/bt1"
+        android:layout_height="wrap_content"
+        android:text="取消" />
+
+</RelativeLayout>
